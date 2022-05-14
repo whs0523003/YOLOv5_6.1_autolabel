@@ -1,3 +1,7 @@
 YOLOv5_6.1 自动标记目标框
 
 利用YOLOv5官方6.1版的预测为新数据生成目标框，并将目标框信息保存为txt和xml格式，支持人工使用labelimg进行微调。
+
+输入对象为jpg图片，将需要预测的新图片(jpg)保存在一个文件夹里，并设置auto_label.py的img_path参数为指定文件夹。
+
+输出对象是txt格式文件，对应每张jpg图片中预测到的目标框信息，可以通过process_txt处理成适合labelimg处理的xml标签格式。
