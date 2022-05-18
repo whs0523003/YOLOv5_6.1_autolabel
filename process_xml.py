@@ -31,7 +31,7 @@ parent
 # ================================ 参数 ================================
 input_file = './raw/'  # 输入要处理的文件夹路径，需要自己创建
 output_file = './datasets/'  # 输出的txt格式文件的文件夹路径
-dataset_name = './csgo_data'  # 要创立的数据集名称
+dataset_name = './name_data'  # 要创立的数据集名称
 classes = ['gangster', 'police']  # 数据类别
 
 trainval_test = 0  # 指定(训练集+验证集)与测试集的比例，0则表示不划分测试集
