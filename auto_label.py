@@ -5,12 +5,6 @@ from pathlib import Path
 import numpy as np
 import torch
 import torch.backends.cudnn as cudnn
-import pyautogui
-
-# 把当前工作环境从Game_Jump文件夹中切换到主文件夹yolov5中
-last_path = '\\'.join(os.getcwd().split('\\')[:-1])  # 获得上一级目录
-sys.path.append(last_path)  # 添加主路径到path路径中
-os.chdir(last_path)  # 更改工作路径
 
 from models.common import DetectMultiBackend
 from utils.general import (LOGGER, check_file, check_img_size, check_imshow, check_requirements, colorstr, cv2,
